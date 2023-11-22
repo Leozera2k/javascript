@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anoNasc = prompt('Em que ano você nasceu?')
+        while(anoNasc >= 2020){
+            alert('Por favor, informe o ano corretamente!')
+            anoNasc = prompt('Em que ano você nasceu?')
+        }
+        var anoAtual = prompt('Em qual ano estamos?')
+        while(anoAtual < anoNasc){
+            alert('Por favor, Informe o ano atual corretamente')
+            prompt('Em qual ano estamos?')
+        }
+        
+        var idade = anoAtual - anoNasc
+        
+       
+        alert('Sua idade é: ' + idade)
+    </script>
+</body>
+</html>
