@@ -10,11 +10,28 @@
        function pessoa(){
             this.nome = 'Leonardo'
             this.idade = 25
+            this.printNome = function(){
+                alert(this.nome)
+            }
+            this.returnAnimal = function(animal){
+                return animal
+            }
        }
 
-       var pessoa = new pessoa();
+       function animal(nome, peso){
+        if(nome == undefined){
+            nome = 'cachorro'
+        }
+        if(peso == undefined){
+            peso = '5kg'
+        }
+            this.nome = nome
+            this.peso = peso
+       }
 
-       
+       animal = new animal ('Gato', '10kg')
+       alert(animal.nome)
+       alert(animal.peso)
     </script>
 </body>
 </html>
