@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>Digite seu pais de origem na caixa abaixo: </p>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="nac">
+        
+    </div>
+    <script>
+        function verificar(){
+            var pais = window.document.getElementById('txtpais')
+            var nac = window.document.getElementById('nac')
+            if (pais == 'Brasil'){
+                nac.innerHTML += `<p> Você é Brasileiro!</p>`
+            }
+            else{
+                nac.innerHTML += '<p>Você é estrangeiro </p>'
+            }
+        }
+    </script>
+</body>
+</html>
