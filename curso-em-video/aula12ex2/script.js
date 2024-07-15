@@ -14,15 +14,15 @@ function verificar(){
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             genero = 'Homem'
-            if (idade >= 0 && idade < 10) {
+            if (idade >= 0 && idade < 12) {
                 //Criança
                 img.setAttribute('src', 'bebe-m.png')
             }
-            else if (idade >= 10 && idade < 21) {
+            else if (idade < 21) {
                 // Jovem
                 img.setAttribute('src', 'jovem-m.png')
             }
-            else if(idade < 50) {
+            else if(idade < 60) {
                 //Adulto
                 img.setAttribute('src', 'adulto-m.png')
             }
@@ -40,7 +40,7 @@ function verificar(){
                 // Jovem
                 img.setAttribute('src', 'jovem-f.png')
             }
-            else if(idade < 50) {
+            else if(idade < 60) {
                 //Adulto
                 img.setAttribute('src', 'adulto-f.png')
             }
